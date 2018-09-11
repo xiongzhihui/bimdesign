@@ -1,0 +1,10 @@
+
+#ifndef ZRXVERSION_HEADERFILE
+#define ZRXVERSION_HEADERFILE
+
+const  unsigned int  ZRX_MAIN_VERSION = 2018; 
+const  unsigned int  ZRX_PATCH_VERSION = 00;
+
+
+
+#endif	//ZRXVERSION_HEADERFILE

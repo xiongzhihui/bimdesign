@@ -1,0 +1,1491 @@
+
+#ifndef __ACTC_I_H__
+#define __ACTC_I_H__
+
+#include "../inc/zAcTc_i.h"
+
+#ifndef AcadToolImage
+#define AcadToolImage		ZcadToolImage
+#endif //#ifndef AcadToolImage
+
+#ifndef AcadToolProperties
+#define AcadToolProperties		ZcadToolProperties
+#endif //#ifndef AcadToolProperties
+
+#ifndef CLSID_AcadToolImage
+#define CLSID_AcadToolImage		CLSID_ZcadToolImage
+#endif //#ifndef CLSID_AcadToolImage
+
+#ifndef CLSID_AcadToolProperties
+#define CLSID_AcadToolProperties		CLSID_ZcadToolProperties
+#endif //#ifndef CLSID_AcadToolProperties
+
+#ifndef IAcadStockTool
+#define IAcadStockTool		IZcadStockTool
+#endif //#ifndef IAcadStockTool
+
+#ifndef IAcadStockToolVtbl
+#define IAcadStockToolVtbl		IZcadStockToolVtbl
+#endif //#ifndef IAcadStockToolVtbl
+
+#ifndef IAcadStockTool_AddRef
+#define IAcadStockTool_AddRef		IZcadStockTool_AddRef
+#endif //#ifndef IAcadStockTool_AddRef
+
+#ifndef IAcadStockTool_CreateTool
+#define IAcadStockTool_CreateTool		IZcadStockTool_CreateTool
+#endif //#ifndef IAcadStockTool_CreateTool
+
+#ifndef IAcadStockTool_CreateTool_Proxy
+#define IAcadStockTool_CreateTool_Proxy		IZcadStockTool_CreateTool_Proxy
+#endif //#ifndef IAcadStockTool_CreateTool_Proxy
+
+#ifndef IAcadStockTool_CreateTool_Stub
+#define IAcadStockTool_CreateTool_Stub		IZcadStockTool_CreateTool_Stub
+#endif //#ifndef IAcadStockTool_CreateTool_Stub
+
+#ifndef IAcadStockTool_QueryInterface
+#define IAcadStockTool_QueryInterface		IZcadStockTool_QueryInterface
+#endif //#ifndef IAcadStockTool_QueryInterface
+
+#ifndef IAcadStockTool_Release
+#define IAcadStockTool_Release		IZcadStockTool_Release
+#endif //#ifndef IAcadStockTool_Release
+
+#ifndef IAcadTool
+#define IAcadTool		IZcadTool
+#endif //#ifndef IAcadTool
+
+#ifndef IAcadTool2
+#define IAcadTool2		IZcadTool2
+#endif //#ifndef IAcadTool2
+
+#ifndef IAcadTool2Vtbl
+#define IAcadTool2Vtbl		IZcadTool2Vtbl
+#endif //#ifndef IAcadTool2Vtbl
+
+#ifndef IAcadTool2_AddRef
+#define IAcadTool2_AddRef		IZcadTool2_AddRef
+#endif //#ifndef IAcadTool2_AddRef
+
+#ifndef IAcadTool2_QueryInterface
+#define IAcadTool2_QueryInterface		IZcadTool2_QueryInterface
+#endif //#ifndef IAcadTool2_QueryInterface
+
+#ifndef IAcadTool2_Release
+#define IAcadTool2_Release		IZcadTool2_Release
+#endif //#ifndef IAcadTool2_Release
+
+#ifndef IAcadTool2_UpdateImage
+#define IAcadTool2_UpdateImage		IZcadTool2_UpdateImage
+#endif //#ifndef IAcadTool2_UpdateImage
+
+#ifndef IAcadTool2_UpdateImage_Proxy
+#define IAcadTool2_UpdateImage_Proxy		IZcadTool2_UpdateImage_Proxy
+#endif //#ifndef IAcadTool2_UpdateImage_Proxy
+
+#ifndef IAcadTool2_UpdateImage_Stub
+#define IAcadTool2_UpdateImage_Stub		IZcadTool2_UpdateImage_Stub
+#endif //#ifndef IAcadTool2_UpdateImage_Stub
+
+#ifndef IAcadToolContextMenu
+#define IAcadToolContextMenu		IZcadToolContextMenu
+#endif //#ifndef IAcadToolContextMenu
+
+#ifndef IAcadToolContextMenuVtbl
+#define IAcadToolContextMenuVtbl		IZcadToolContextMenuVtbl
+#endif //#ifndef IAcadToolContextMenuVtbl
+
+#ifndef IAcadToolContextMenu_AddRef
+#define IAcadToolContextMenu_AddRef		IZcadToolContextMenu_AddRef
+#endif //#ifndef IAcadToolContextMenu_AddRef
+
+#ifndef IAcadToolContextMenu_Customize
+#define IAcadToolContextMenu_Customize		IZcadToolContextMenu_Customize
+#endif //#ifndef IAcadToolContextMenu_Customize
+
+#ifndef IAcadToolContextMenu_Customize_Proxy
+#define IAcadToolContextMenu_Customize_Proxy		IZcadToolContextMenu_Customize_Proxy
+#endif //#ifndef IAcadToolContextMenu_Customize_Proxy
+
+#ifndef IAcadToolContextMenu_Customize_Stub
+#define IAcadToolContextMenu_Customize_Stub		IZcadToolContextMenu_Customize_Stub
+#endif //#ifndef IAcadToolContextMenu_Customize_Stub
+
+#ifndef IAcadToolContextMenu_GetMenuHelp
+#define IAcadToolContextMenu_GetMenuHelp		IZcadToolContextMenu_GetMenuHelp
+#endif //#ifndef IAcadToolContextMenu_GetMenuHelp
+
+#ifndef IAcadToolContextMenu_GetMenuHelp_Proxy
+#define IAcadToolContextMenu_GetMenuHelp_Proxy		IZcadToolContextMenu_GetMenuHelp_Proxy
+#endif //#ifndef IAcadToolContextMenu_GetMenuHelp_Proxy
+
+#ifndef IAcadToolContextMenu_GetMenuHelp_Stub
+#define IAcadToolContextMenu_GetMenuHelp_Stub		IZcadToolContextMenu_GetMenuHelp_Stub
+#endif //#ifndef IAcadToolContextMenu_GetMenuHelp_Stub
+
+#ifndef IAcadToolContextMenu_InvokeMenuCommand
+#define IAcadToolContextMenu_InvokeMenuCommand		IZcadToolContextMenu_InvokeMenuCommand
+#endif //#ifndef IAcadToolContextMenu_InvokeMenuCommand
+
+#ifndef IAcadToolContextMenu_InvokeMenuCommand_Proxy
+#define IAcadToolContextMenu_InvokeMenuCommand_Proxy		IZcadToolContextMenu_InvokeMenuCommand_Proxy
+#endif //#ifndef IAcadToolContextMenu_InvokeMenuCommand_Proxy
+
+#ifndef IAcadToolContextMenu_InvokeMenuCommand_Stub
+#define IAcadToolContextMenu_InvokeMenuCommand_Stub		IZcadToolContextMenu_InvokeMenuCommand_Stub
+#endif //#ifndef IAcadToolContextMenu_InvokeMenuCommand_Stub
+
+#ifndef IAcadToolContextMenu_QueryInterface
+#define IAcadToolContextMenu_QueryInterface		IZcadToolContextMenu_QueryInterface
+#endif //#ifndef IAcadToolContextMenu_QueryInterface
+
+#ifndef IAcadToolContextMenu_Release
+#define IAcadToolContextMenu_Release		IZcadToolContextMenu_Release
+#endif //#ifndef IAcadToolContextMenu_Release
+
+#ifndef IAcadToolCopyPaste
+#define IAcadToolCopyPaste		IZcadToolCopyPaste
+#endif //#ifndef IAcadToolCopyPaste
+
+#ifndef IAcadToolCopyPasteVtbl
+#define IAcadToolCopyPasteVtbl		IZcadToolCopyPasteVtbl
+#endif //#ifndef IAcadToolCopyPasteVtbl
+
+#ifndef IAcadToolCopyPaste_AddRef
+#define IAcadToolCopyPaste_AddRef		IZcadToolCopyPaste_AddRef
+#endif //#ifndef IAcadToolCopyPaste_AddRef
+
+#ifndef IAcadToolCopyPaste_CanPaste
+#define IAcadToolCopyPaste_CanPaste		IZcadToolCopyPaste_CanPaste
+#endif //#ifndef IAcadToolCopyPaste_CanPaste
+
+#ifndef IAcadToolCopyPaste_CanPaste_Proxy
+#define IAcadToolCopyPaste_CanPaste_Proxy		IZcadToolCopyPaste_CanPaste_Proxy
+#endif //#ifndef IAcadToolCopyPaste_CanPaste_Proxy
+
+#ifndef IAcadToolCopyPaste_CanPaste_Stub
+#define IAcadToolCopyPaste_CanPaste_Stub		IZcadToolCopyPaste_CanPaste_Stub
+#endif //#ifndef IAcadToolCopyPaste_CanPaste_Stub
+
+#ifndef IAcadToolCopyPaste_Copy
+#define IAcadToolCopyPaste_Copy		IZcadToolCopyPaste_Copy
+#endif //#ifndef IAcadToolCopyPaste_Copy
+
+#ifndef IAcadToolCopyPaste_Copy_Proxy
+#define IAcadToolCopyPaste_Copy_Proxy		IZcadToolCopyPaste_Copy_Proxy
+#endif //#ifndef IAcadToolCopyPaste_Copy_Proxy
+
+#ifndef IAcadToolCopyPaste_Copy_Stub
+#define IAcadToolCopyPaste_Copy_Stub		IZcadToolCopyPaste_Copy_Stub
+#endif //#ifndef IAcadToolCopyPaste_Copy_Stub
+
+#ifndef IAcadToolCopyPaste_Paste
+#define IAcadToolCopyPaste_Paste		IZcadToolCopyPaste_Paste
+#endif //#ifndef IAcadToolCopyPaste_Paste
+
+#ifndef IAcadToolCopyPaste_Paste_Proxy
+#define IAcadToolCopyPaste_Paste_Proxy		IZcadToolCopyPaste_Paste_Proxy
+#endif //#ifndef IAcadToolCopyPaste_Paste_Proxy
+
+#ifndef IAcadToolCopyPaste_Paste_Stub
+#define IAcadToolCopyPaste_Paste_Stub		IZcadToolCopyPaste_Paste_Stub
+#endif //#ifndef IAcadToolCopyPaste_Paste_Stub
+
+#ifndef IAcadToolCopyPaste_QueryInterface
+#define IAcadToolCopyPaste_QueryInterface		IZcadToolCopyPaste_QueryInterface
+#endif //#ifndef IAcadToolCopyPaste_QueryInterface
+
+#ifndef IAcadToolCopyPaste_Release
+#define IAcadToolCopyPaste_Release		IZcadToolCopyPaste_Release
+#endif //#ifndef IAcadToolCopyPaste_Release
+
+#ifndef IAcadToolDragSource
+#define IAcadToolDragSource		IZcadToolDragSource
+#endif //#ifndef IAcadToolDragSource
+
+#ifndef IAcadToolDragSourceVtbl
+#define IAcadToolDragSourceVtbl		IZcadToolDragSourceVtbl
+#endif //#ifndef IAcadToolDragSourceVtbl
+
+#ifndef IAcadToolDragSource_AddRef
+#define IAcadToolDragSource_AddRef		IZcadToolDragSource_AddRef
+#endif //#ifndef IAcadToolDragSource_AddRef
+
+#ifndef IAcadToolDragSource_BeginDrag
+#define IAcadToolDragSource_BeginDrag		IZcadToolDragSource_BeginDrag
+#endif //#ifndef IAcadToolDragSource_BeginDrag
+
+#ifndef IAcadToolDragSource_BeginDrag_Proxy
+#define IAcadToolDragSource_BeginDrag_Proxy		IZcadToolDragSource_BeginDrag_Proxy
+#endif //#ifndef IAcadToolDragSource_BeginDrag_Proxy
+
+#ifndef IAcadToolDragSource_BeginDrag_Stub
+#define IAcadToolDragSource_BeginDrag_Stub		IZcadToolDragSource_BeginDrag_Stub
+#endif //#ifndef IAcadToolDragSource_BeginDrag_Stub
+
+#ifndef IAcadToolDragSource_DragEnterDrawing
+#define IAcadToolDragSource_DragEnterDrawing		IZcadToolDragSource_DragEnterDrawing
+#endif //#ifndef IAcadToolDragSource_DragEnterDrawing
+
+#ifndef IAcadToolDragSource_DragEnterDrawing_Proxy
+#define IAcadToolDragSource_DragEnterDrawing_Proxy		IZcadToolDragSource_DragEnterDrawing_Proxy
+#endif //#ifndef IAcadToolDragSource_DragEnterDrawing_Proxy
+
+#ifndef IAcadToolDragSource_DragEnterDrawing_Stub
+#define IAcadToolDragSource_DragEnterDrawing_Stub		IZcadToolDragSource_DragEnterDrawing_Stub
+#endif //#ifndef IAcadToolDragSource_DragEnterDrawing_Stub
+
+#ifndef IAcadToolDragSource_DragInProgress
+#define IAcadToolDragSource_DragInProgress		IZcadToolDragSource_DragInProgress
+#endif //#ifndef IAcadToolDragSource_DragInProgress
+
+#ifndef IAcadToolDragSource_DragInProgress_Proxy
+#define IAcadToolDragSource_DragInProgress_Proxy		IZcadToolDragSource_DragInProgress_Proxy
+#endif //#ifndef IAcadToolDragSource_DragInProgress_Proxy
+
+#ifndef IAcadToolDragSource_DragInProgress_Stub
+#define IAcadToolDragSource_DragInProgress_Stub		IZcadToolDragSource_DragInProgress_Stub
+#endif //#ifndef IAcadToolDragSource_DragInProgress_Stub
+
+#ifndef IAcadToolDragSource_DragLeaveDrawing
+#define IAcadToolDragSource_DragLeaveDrawing		IZcadToolDragSource_DragLeaveDrawing
+#endif //#ifndef IAcadToolDragSource_DragLeaveDrawing
+
+#ifndef IAcadToolDragSource_DragLeaveDrawing_Proxy
+#define IAcadToolDragSource_DragLeaveDrawing_Proxy		IZcadToolDragSource_DragLeaveDrawing_Proxy
+#endif //#ifndef IAcadToolDragSource_DragLeaveDrawing_Proxy
+
+#ifndef IAcadToolDragSource_DragLeaveDrawing_Stub
+#define IAcadToolDragSource_DragLeaveDrawing_Stub		IZcadToolDragSource_DragLeaveDrawing_Stub
+#endif //#ifndef IAcadToolDragSource_DragLeaveDrawing_Stub
+
+#ifndef IAcadToolDragSource_DragOverDrawing
+#define IAcadToolDragSource_DragOverDrawing		IZcadToolDragSource_DragOverDrawing
+#endif //#ifndef IAcadToolDragSource_DragOverDrawing
+
+#ifndef IAcadToolDragSource_DragOverDrawing_Proxy
+#define IAcadToolDragSource_DragOverDrawing_Proxy		IZcadToolDragSource_DragOverDrawing_Proxy
+#endif //#ifndef IAcadToolDragSource_DragOverDrawing_Proxy
+
+#ifndef IAcadToolDragSource_DragOverDrawing_Stub
+#define IAcadToolDragSource_DragOverDrawing_Stub		IZcadToolDragSource_DragOverDrawing_Stub
+#endif //#ifndef IAcadToolDragSource_DragOverDrawing_Stub
+
+#ifndef IAcadToolDragSource_DropInDrawing
+#define IAcadToolDragSource_DropInDrawing		IZcadToolDragSource_DropInDrawing
+#endif //#ifndef IAcadToolDragSource_DropInDrawing
+
+#ifndef IAcadToolDragSource_DropInDrawing_Proxy
+#define IAcadToolDragSource_DropInDrawing_Proxy		IZcadToolDragSource_DropInDrawing_Proxy
+#endif //#ifndef IAcadToolDragSource_DropInDrawing_Proxy
+
+#ifndef IAcadToolDragSource_DropInDrawing_Stub
+#define IAcadToolDragSource_DropInDrawing_Stub		IZcadToolDragSource_DropInDrawing_Stub
+#endif //#ifndef IAcadToolDragSource_DropInDrawing_Stub
+
+#ifndef IAcadToolDragSource_EndDrag
+#define IAcadToolDragSource_EndDrag		IZcadToolDragSource_EndDrag
+#endif //#ifndef IAcadToolDragSource_EndDrag
+
+#ifndef IAcadToolDragSource_EndDrag_Proxy
+#define IAcadToolDragSource_EndDrag_Proxy		IZcadToolDragSource_EndDrag_Proxy
+#endif //#ifndef IAcadToolDragSource_EndDrag_Proxy
+
+#ifndef IAcadToolDragSource_EndDrag_Stub
+#define IAcadToolDragSource_EndDrag_Stub		IZcadToolDragSource_EndDrag_Stub
+#endif //#ifndef IAcadToolDragSource_EndDrag_Stub
+
+#ifndef IAcadToolDragSource_QueryInterface
+#define IAcadToolDragSource_QueryInterface		IZcadToolDragSource_QueryInterface
+#endif //#ifndef IAcadToolDragSource_QueryInterface
+
+#ifndef IAcadToolDragSource_Release
+#define IAcadToolDragSource_Release		IZcadToolDragSource_Release
+#endif //#ifndef IAcadToolDragSource_Release
+
+#ifndef IAcadToolDropTarget
+#define IAcadToolDropTarget		IZcadToolDropTarget
+#endif //#ifndef IAcadToolDropTarget
+
+#ifndef IAcadToolDropTargetVtbl
+#define IAcadToolDropTargetVtbl		IZcadToolDropTargetVtbl
+#endif //#ifndef IAcadToolDropTargetVtbl
+
+#ifndef IAcadToolDropTarget_AddRef
+#define IAcadToolDropTarget_AddRef		IZcadToolDropTarget_AddRef
+#endif //#ifndef IAcadToolDropTarget_AddRef
+
+#ifndef IAcadToolDropTarget_DragEnter
+#define IAcadToolDropTarget_DragEnter		IZcadToolDropTarget_DragEnter
+#endif //#ifndef IAcadToolDropTarget_DragEnter
+
+#ifndef IAcadToolDropTarget_DragEnter_Proxy
+#define IAcadToolDropTarget_DragEnter_Proxy		IZcadToolDropTarget_DragEnter_Proxy
+#endif //#ifndef IAcadToolDropTarget_DragEnter_Proxy
+
+#ifndef IAcadToolDropTarget_DragEnter_Stub
+#define IAcadToolDropTarget_DragEnter_Stub		IZcadToolDropTarget_DragEnter_Stub
+#endif //#ifndef IAcadToolDropTarget_DragEnter_Stub
+
+#ifndef IAcadToolDropTarget_DragLeave
+#define IAcadToolDropTarget_DragLeave		IZcadToolDropTarget_DragLeave
+#endif //#ifndef IAcadToolDropTarget_DragLeave
+
+#ifndef IAcadToolDropTarget_DragLeave_Proxy
+#define IAcadToolDropTarget_DragLeave_Proxy		IZcadToolDropTarget_DragLeave_Proxy
+#endif //#ifndef IAcadToolDropTarget_DragLeave_Proxy
+
+#ifndef IAcadToolDropTarget_DragLeave_Stub
+#define IAcadToolDropTarget_DragLeave_Stub		IZcadToolDropTarget_DragLeave_Stub
+#endif //#ifndef IAcadToolDropTarget_DragLeave_Stub
+
+#ifndef IAcadToolDropTarget_DragOver
+#define IAcadToolDropTarget_DragOver		IZcadToolDropTarget_DragOver
+#endif //#ifndef IAcadToolDropTarget_DragOver
+
+#ifndef IAcadToolDropTarget_DragOver_Proxy
+#define IAcadToolDropTarget_DragOver_Proxy		IZcadToolDropTarget_DragOver_Proxy
+#endif //#ifndef IAcadToolDropTarget_DragOver_Proxy
+
+#ifndef IAcadToolDropTarget_DragOver_Stub
+#define IAcadToolDropTarget_DragOver_Stub		IZcadToolDropTarget_DragOver_Stub
+#endif //#ifndef IAcadToolDropTarget_DragOver_Stub
+
+#ifndef IAcadToolDropTarget_Drop
+#define IAcadToolDropTarget_Drop		IZcadToolDropTarget_Drop
+#endif //#ifndef IAcadToolDropTarget_Drop
+
+#ifndef IAcadToolDropTarget_Drop_Proxy
+#define IAcadToolDropTarget_Drop_Proxy		IZcadToolDropTarget_Drop_Proxy
+#endif //#ifndef IAcadToolDropTarget_Drop_Proxy
+
+#ifndef IAcadToolDropTarget_Drop_Stub
+#define IAcadToolDropTarget_Drop_Stub		IZcadToolDropTarget_Drop_Stub
+#endif //#ifndef IAcadToolDropTarget_Drop_Stub
+
+#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem
+#define IAcadToolDropTarget_GetDragDropContextMenuItem		IZcadToolDropTarget_GetDragDropContextMenuItem
+#endif //#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem
+
+#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem_Proxy
+#define IAcadToolDropTarget_GetDragDropContextMenuItem_Proxy		IZcadToolDropTarget_GetDragDropContextMenuItem_Proxy
+#endif //#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem_Proxy
+
+#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem_Stub
+#define IAcadToolDropTarget_GetDragDropContextMenuItem_Stub		IZcadToolDropTarget_GetDragDropContextMenuItem_Stub
+#endif //#ifndef IAcadToolDropTarget_GetDragDropContextMenuItem_Stub
+
+#ifndef IAcadToolDropTarget_QueryInterface
+#define IAcadToolDropTarget_QueryInterface		IZcadToolDropTarget_QueryInterface
+#endif //#ifndef IAcadToolDropTarget_QueryInterface
+
+#ifndef IAcadToolDropTarget_Release
+#define IAcadToolDropTarget_Release		IZcadToolDropTarget_Release
+#endif //#ifndef IAcadToolDropTarget_Release
+
+#ifndef IAcadToolFlyoutShape
+#define IAcadToolFlyoutShape		IZcadToolFlyoutShape
+#endif //#ifndef IAcadToolFlyoutShape
+
+#ifndef IAcadToolFlyoutShapeVtbl
+#define IAcadToolFlyoutShapeVtbl		IZcadToolFlyoutShapeVtbl
+#endif //#ifndef IAcadToolFlyoutShapeVtbl
+
+#ifndef IAcadToolFlyoutShape_AddRef
+#define IAcadToolFlyoutShape_AddRef		IZcadToolFlyoutShape_AddRef
+#endif //#ifndef IAcadToolFlyoutShape_AddRef
+
+#ifndef IAcadToolFlyoutShape_QueryInterface
+#define IAcadToolFlyoutShape_QueryInterface		IZcadToolFlyoutShape_QueryInterface
+#endif //#ifndef IAcadToolFlyoutShape_QueryInterface
+
+#ifndef IAcadToolFlyoutShape_Release
+#define IAcadToolFlyoutShape_Release		IZcadToolFlyoutShape_Release
+#endif //#ifndef IAcadToolFlyoutShape_Release
+
+#ifndef IAcadToolFlyoutShape_SetFlyoutTools
+#define IAcadToolFlyoutShape_SetFlyoutTools		IZcadToolFlyoutShape_SetFlyoutTools
+#endif //#ifndef IAcadToolFlyoutShape_SetFlyoutTools
+
+#ifndef IAcadToolFlyoutShape_SetFlyoutTools_Proxy
+#define IAcadToolFlyoutShape_SetFlyoutTools_Proxy		IZcadToolFlyoutShape_SetFlyoutTools_Proxy
+#endif //#ifndef IAcadToolFlyoutShape_SetFlyoutTools_Proxy
+
+#ifndef IAcadToolFlyoutShape_SetFlyoutTools_Stub
+#define IAcadToolFlyoutShape_SetFlyoutTools_Stub		IZcadToolFlyoutShape_SetFlyoutTools_Stub
+#endif //#ifndef IAcadToolFlyoutShape_SetFlyoutTools_Stub
+
+#ifndef IAcadToolImage
+#define IAcadToolImage		IZcadToolImage
+#endif //#ifndef IAcadToolImage
+
+#ifndef IAcadToolImageVtbl
+#define IAcadToolImageVtbl		IZcadToolImageVtbl
+#endif //#ifndef IAcadToolImageVtbl
+
+#ifndef IAcadToolImage_AddRef
+#define IAcadToolImage_AddRef		IZcadToolImage_AddRef
+#endif //#ifndef IAcadToolImage_AddRef
+
+#ifndef IAcadToolImage_GetSize
+#define IAcadToolImage_GetSize		IZcadToolImage_GetSize
+#endif //#ifndef IAcadToolImage_GetSize
+
+#ifndef IAcadToolImage_GetSize_Proxy
+#define IAcadToolImage_GetSize_Proxy		IZcadToolImage_GetSize_Proxy
+#endif //#ifndef IAcadToolImage_GetSize_Proxy
+
+#ifndef IAcadToolImage_GetSize_Stub
+#define IAcadToolImage_GetSize_Stub		IZcadToolImage_GetSize_Stub
+#endif //#ifndef IAcadToolImage_GetSize_Stub
+
+#ifndef IAcadToolImage_GetType
+#define IAcadToolImage_GetType		IZcadToolImage_GetType
+#endif //#ifndef IAcadToolImage_GetType
+
+#ifndef IAcadToolImage_GetType_Proxy
+#define IAcadToolImage_GetType_Proxy		IZcadToolImage_GetType_Proxy
+#endif //#ifndef IAcadToolImage_GetType_Proxy
+
+#ifndef IAcadToolImage_GetType_Stub
+#define IAcadToolImage_GetType_Stub		IZcadToolImage_GetType_Stub
+#endif //#ifndef IAcadToolImage_GetType_Stub
+
+#ifndef IAcadToolImage_IsImageLoaded
+#define IAcadToolImage_IsImageLoaded		IZcadToolImage_IsImageLoaded
+#endif //#ifndef IAcadToolImage_IsImageLoaded
+
+#ifndef IAcadToolImage_IsImageLoaded_Proxy
+#define IAcadToolImage_IsImageLoaded_Proxy		IZcadToolImage_IsImageLoaded_Proxy
+#endif //#ifndef IAcadToolImage_IsImageLoaded_Proxy
+
+#ifndef IAcadToolImage_IsImageLoaded_Stub
+#define IAcadToolImage_IsImageLoaded_Stub		IZcadToolImage_IsImageLoaded_Stub
+#endif //#ifndef IAcadToolImage_IsImageLoaded_Stub
+
+#ifndef IAcadToolImage_Load
+#define IAcadToolImage_Load		IZcadToolImage_Load
+#endif //#ifndef IAcadToolImage_Load
+
+#ifndef IAcadToolImage_Load_Proxy
+#define IAcadToolImage_Load_Proxy		IZcadToolImage_Load_Proxy
+#endif //#ifndef IAcadToolImage_Load_Proxy
+
+#ifndef IAcadToolImage_Load_Stub
+#define IAcadToolImage_Load_Stub		IZcadToolImage_Load_Stub
+#endif //#ifndef IAcadToolImage_Load_Stub
+
+#ifndef IAcadToolImage_QueryInterface
+#define IAcadToolImage_QueryInterface		IZcadToolImage_QueryInterface
+#endif //#ifndef IAcadToolImage_QueryInterface
+
+#ifndef IAcadToolImage_Release
+#define IAcadToolImage_Release		IZcadToolImage_Release
+#endif //#ifndef IAcadToolImage_Release
+
+#ifndef IAcadToolImage_Render
+#define IAcadToolImage_Render		IZcadToolImage_Render
+#endif //#ifndef IAcadToolImage_Render
+
+#ifndef IAcadToolImage_Render_Proxy
+#define IAcadToolImage_Render_Proxy		IZcadToolImage_Render_Proxy
+#endif //#ifndef IAcadToolImage_Render_Proxy
+
+#ifndef IAcadToolImage_Render_Stub
+#define IAcadToolImage_Render_Stub		IZcadToolImage_Render_Stub
+#endif //#ifndef IAcadToolImage_Render_Stub
+
+#ifndef IAcadToolImage_Save
+#define IAcadToolImage_Save		IZcadToolImage_Save
+#endif //#ifndef IAcadToolImage_Save
+
+#ifndef IAcadToolImage_Save_Proxy
+#define IAcadToolImage_Save_Proxy		IZcadToolImage_Save_Proxy
+#endif //#ifndef IAcadToolImage_Save_Proxy
+
+#ifndef IAcadToolImage_Save_Stub
+#define IAcadToolImage_Save_Stub		IZcadToolImage_Save_Stub
+#endif //#ifndef IAcadToolImage_Save_Stub
+
+#ifndef IAcadToolProperties
+#define IAcadToolProperties		IZcadToolProperties
+#endif //#ifndef IAcadToolProperties
+
+#ifndef IAcadToolProperties2
+#define IAcadToolProperties2		IZcadToolProperties2
+#endif //#ifndef IAcadToolProperties2
+
+#ifndef IAcadToolProperties2Vtbl
+#define IAcadToolProperties2Vtbl		IZcadToolProperties2Vtbl
+#endif //#ifndef IAcadToolProperties2Vtbl
+
+#ifndef IAcadToolProperties2_AddRef
+#define IAcadToolProperties2_AddRef		IZcadToolProperties2_AddRef
+#endif //#ifndef IAcadToolProperties2_AddRef
+
+#ifndef IAcadToolProperties2_GetIDsOfNames
+#define IAcadToolProperties2_GetIDsOfNames		IZcadToolProperties2_GetIDsOfNames
+#endif //#ifndef IAcadToolProperties2_GetIDsOfNames
+
+#ifndef IAcadToolProperties2_GetTypeInfo
+#define IAcadToolProperties2_GetTypeInfo		IZcadToolProperties2_GetTypeInfo
+#endif //#ifndef IAcadToolProperties2_GetTypeInfo
+
+#ifndef IAcadToolProperties2_GetTypeInfoCount
+#define IAcadToolProperties2_GetTypeInfoCount		IZcadToolProperties2_GetTypeInfoCount
+#endif //#ifndef IAcadToolProperties2_GetTypeInfoCount
+
+#ifndef IAcadToolProperties2_Invoke
+#define IAcadToolProperties2_Invoke		IZcadToolProperties2_Invoke
+#endif //#ifndef IAcadToolProperties2_Invoke
+
+#ifndef IAcadToolProperties2_QueryInterface
+#define IAcadToolProperties2_QueryInterface		IZcadToolProperties2_QueryInterface
+#endif //#ifndef IAcadToolProperties2_QueryInterface
+
+#ifndef IAcadToolProperties2_Release
+#define IAcadToolProperties2_Release		IZcadToolProperties2_Release
+#endif //#ifndef IAcadToolProperties2_Release
+
+#ifndef IAcadToolProperties2_get_ImageOption
+#define IAcadToolProperties2_get_ImageOption		IZcadToolProperties2_get_ImageOption
+#endif //#ifndef IAcadToolProperties2_get_ImageOption
+
+#ifndef IAcadToolProperties2_get_ImageOption_Proxy
+#define IAcadToolProperties2_get_ImageOption_Proxy		IZcadToolProperties2_get_ImageOption_Proxy
+#endif //#ifndef IAcadToolProperties2_get_ImageOption_Proxy
+
+#ifndef IAcadToolProperties2_get_ImageOption_Stub
+#define IAcadToolProperties2_get_ImageOption_Stub		IZcadToolProperties2_get_ImageOption_Stub
+#endif //#ifndef IAcadToolProperties2_get_ImageOption_Stub
+
+#ifndef IAcadToolProperties2_get_ItemOption
+#define IAcadToolProperties2_get_ItemOption		IZcadToolProperties2_get_ItemOption
+#endif //#ifndef IAcadToolProperties2_get_ItemOption
+
+#ifndef IAcadToolProperties2_get_ItemOption_Proxy
+#define IAcadToolProperties2_get_ItemOption_Proxy		IZcadToolProperties2_get_ItemOption_Proxy
+#endif //#ifndef IAcadToolProperties2_get_ItemOption_Proxy
+
+#ifndef IAcadToolProperties2_get_ItemOption_Stub
+#define IAcadToolProperties2_get_ItemOption_Stub		IZcadToolProperties2_get_ItemOption_Stub
+#endif //#ifndef IAcadToolProperties2_get_ItemOption_Stub
+
+#ifndef IAcadToolProperties2_put_ImageOption
+#define IAcadToolProperties2_put_ImageOption		IZcadToolProperties2_put_ImageOption
+#endif //#ifndef IAcadToolProperties2_put_ImageOption
+
+#ifndef IAcadToolProperties2_put_ImageOption_Proxy
+#define IAcadToolProperties2_put_ImageOption_Proxy		IZcadToolProperties2_put_ImageOption_Proxy
+#endif //#ifndef IAcadToolProperties2_put_ImageOption_Proxy
+
+#ifndef IAcadToolProperties2_put_ImageOption_Stub
+#define IAcadToolProperties2_put_ImageOption_Stub		IZcadToolProperties2_put_ImageOption_Stub
+#endif //#ifndef IAcadToolProperties2_put_ImageOption_Stub
+
+#ifndef IAcadToolProperties2_put_ItemOption
+#define IAcadToolProperties2_put_ItemOption		IZcadToolProperties2_put_ItemOption
+#endif //#ifndef IAcadToolProperties2_put_ItemOption
+
+#ifndef IAcadToolProperties2_put_ItemOption_Proxy
+#define IAcadToolProperties2_put_ItemOption_Proxy		IZcadToolProperties2_put_ItemOption_Proxy
+#endif //#ifndef IAcadToolProperties2_put_ItemOption_Proxy
+
+#ifndef IAcadToolProperties2_put_ItemOption_Stub
+#define IAcadToolProperties2_put_ItemOption_Stub		IZcadToolProperties2_put_ItemOption_Stub
+#endif //#ifndef IAcadToolProperties2_put_ItemOption_Stub
+
+#ifndef IAcadToolPropertiesVtbl
+#define IAcadToolPropertiesVtbl		IZcadToolPropertiesVtbl
+#endif //#ifndef IAcadToolPropertiesVtbl
+
+#ifndef IAcadToolProperties_AddRef
+#define IAcadToolProperties_AddRef		IZcadToolProperties_AddRef
+#endif //#ifndef IAcadToolProperties_AddRef
+
+#ifndef IAcadToolProperties_GetAcTcTool
+#define IAcadToolProperties_GetAcTcTool		IZcadToolProperties_GetAcTcTool
+#endif //#ifndef IAcadToolProperties_GetAcTcTool
+
+#ifndef IAcadToolProperties_GetAcTcTool_Proxy
+#define IAcadToolProperties_GetAcTcTool_Proxy		IZcadToolProperties_GetAcTcTool_Proxy
+#endif //#ifndef IAcadToolProperties_GetAcTcTool_Proxy
+
+#ifndef IAcadToolProperties_GetAcTcTool_Stub
+#define IAcadToolProperties_GetAcTcTool_Stub		IZcadToolProperties_GetAcTcTool_Stub
+#endif //#ifndef IAcadToolProperties_GetAcTcTool_Stub
+
+#ifndef IAcadToolProperties_GetCurrentShape
+#define IAcadToolProperties_GetCurrentShape		IZcadToolProperties_GetCurrentShape
+#endif //#ifndef IAcadToolProperties_GetCurrentShape
+
+#ifndef IAcadToolProperties_GetCurrentShape_Proxy
+#define IAcadToolProperties_GetCurrentShape_Proxy		IZcadToolProperties_GetCurrentShape_Proxy
+#endif //#ifndef IAcadToolProperties_GetCurrentShape_Proxy
+
+#ifndef IAcadToolProperties_GetCurrentShape_Stub
+#define IAcadToolProperties_GetCurrentShape_Stub		IZcadToolProperties_GetCurrentShape_Stub
+#endif //#ifndef IAcadToolProperties_GetCurrentShape_Stub
+
+#ifndef IAcadToolProperties_GetCustomData
+#define IAcadToolProperties_GetCustomData		IZcadToolProperties_GetCustomData
+#endif //#ifndef IAcadToolProperties_GetCustomData
+
+#ifndef IAcadToolProperties_GetCustomData_Proxy
+#define IAcadToolProperties_GetCustomData_Proxy		IZcadToolProperties_GetCustomData_Proxy
+#endif //#ifndef IAcadToolProperties_GetCustomData_Proxy
+
+#ifndef IAcadToolProperties_GetCustomData_Stub
+#define IAcadToolProperties_GetCustomData_Stub		IZcadToolProperties_GetCustomData_Stub
+#endif //#ifndef IAcadToolProperties_GetCustomData_Stub
+
+#ifndef IAcadToolProperties_GetIDsOfNames
+#define IAcadToolProperties_GetIDsOfNames		IZcadToolProperties_GetIDsOfNames
+#endif //#ifndef IAcadToolProperties_GetIDsOfNames
+
+#ifndef IAcadToolProperties_GetImage
+#define IAcadToolProperties_GetImage		IZcadToolProperties_GetImage
+#endif //#ifndef IAcadToolProperties_GetImage
+
+#ifndef IAcadToolProperties_GetImage_Proxy
+#define IAcadToolProperties_GetImage_Proxy		IZcadToolProperties_GetImage_Proxy
+#endif //#ifndef IAcadToolProperties_GetImage_Proxy
+
+#ifndef IAcadToolProperties_GetImage_Stub
+#define IAcadToolProperties_GetImage_Stub		IZcadToolProperties_GetImage_Stub
+#endif //#ifndef IAcadToolProperties_GetImage_Stub
+
+#ifndef IAcadToolProperties_GetOverlayImage
+#define IAcadToolProperties_GetOverlayImage		IZcadToolProperties_GetOverlayImage
+#endif //#ifndef IAcadToolProperties_GetOverlayImage
+
+#ifndef IAcadToolProperties_GetOverlayImage_Proxy
+#define IAcadToolProperties_GetOverlayImage_Proxy		IZcadToolProperties_GetOverlayImage_Proxy
+#endif //#ifndef IAcadToolProperties_GetOverlayImage_Proxy
+
+#ifndef IAcadToolProperties_GetOverlayImage_Stub
+#define IAcadToolProperties_GetOverlayImage_Stub		IZcadToolProperties_GetOverlayImage_Stub
+#endif //#ifndef IAcadToolProperties_GetOverlayImage_Stub
+
+#ifndef IAcadToolProperties_GetTypeInfo
+#define IAcadToolProperties_GetTypeInfo		IZcadToolProperties_GetTypeInfo
+#endif //#ifndef IAcadToolProperties_GetTypeInfo
+
+#ifndef IAcadToolProperties_GetTypeInfoCount
+#define IAcadToolProperties_GetTypeInfoCount		IZcadToolProperties_GetTypeInfoCount
+#endif //#ifndef IAcadToolProperties_GetTypeInfoCount
+
+#ifndef IAcadToolProperties_Invoke
+#define IAcadToolProperties_Invoke		IZcadToolProperties_Invoke
+#endif //#ifndef IAcadToolProperties_Invoke
+
+#ifndef IAcadToolProperties_QueryInterface
+#define IAcadToolProperties_QueryInterface		IZcadToolProperties_QueryInterface
+#endif //#ifndef IAcadToolProperties_QueryInterface
+
+#ifndef IAcadToolProperties_Release
+#define IAcadToolProperties_Release		IZcadToolProperties_Release
+#endif //#ifndef IAcadToolProperties_Release
+
+#ifndef IAcadToolProperties_SetImage
+#define IAcadToolProperties_SetImage		IZcadToolProperties_SetImage
+#endif //#ifndef IAcadToolProperties_SetImage
+
+#ifndef IAcadToolProperties_SetImage_Proxy
+#define IAcadToolProperties_SetImage_Proxy		IZcadToolProperties_SetImage_Proxy
+#endif //#ifndef IAcadToolProperties_SetImage_Proxy
+
+#ifndef IAcadToolProperties_SetImage_Stub
+#define IAcadToolProperties_SetImage_Stub		IZcadToolProperties_SetImage_Stub
+#endif //#ifndef IAcadToolProperties_SetImage_Stub
+
+#ifndef IAcadToolProperties_SetOverlayImage
+#define IAcadToolProperties_SetOverlayImage		IZcadToolProperties_SetOverlayImage
+#endif //#ifndef IAcadToolProperties_SetOverlayImage
+
+#ifndef IAcadToolProperties_SetOverlayImage_Proxy
+#define IAcadToolProperties_SetOverlayImage_Proxy		IZcadToolProperties_SetOverlayImage_Proxy
+#endif //#ifndef IAcadToolProperties_SetOverlayImage_Proxy
+
+#ifndef IAcadToolProperties_SetOverlayImage_Stub
+#define IAcadToolProperties_SetOverlayImage_Stub		IZcadToolProperties_SetOverlayImage_Stub
+#endif //#ifndef IAcadToolProperties_SetOverlayImage_Stub
+
+#ifndef IAcadToolProperties_get_ActiveShapeIds
+#define IAcadToolProperties_get_ActiveShapeIds		IZcadToolProperties_get_ActiveShapeIds
+#endif //#ifndef IAcadToolProperties_get_ActiveShapeIds
+
+#ifndef IAcadToolProperties_get_ActiveShapeIds_Proxy
+#define IAcadToolProperties_get_ActiveShapeIds_Proxy		IZcadToolProperties_get_ActiveShapeIds_Proxy
+#endif //#ifndef IAcadToolProperties_get_ActiveShapeIds_Proxy
+
+#ifndef IAcadToolProperties_get_ActiveShapeIds_Stub
+#define IAcadToolProperties_get_ActiveShapeIds_Stub		IZcadToolProperties_get_ActiveShapeIds_Stub
+#endif //#ifndef IAcadToolProperties_get_ActiveShapeIds_Stub
+
+#ifndef IAcadToolProperties_get_CurrentShapeId
+#define IAcadToolProperties_get_CurrentShapeId		IZcadToolProperties_get_CurrentShapeId
+#endif //#ifndef IAcadToolProperties_get_CurrentShapeId
+
+#ifndef IAcadToolProperties_get_CurrentShapeId_Proxy
+#define IAcadToolProperties_get_CurrentShapeId_Proxy		IZcadToolProperties_get_CurrentShapeId_Proxy
+#endif //#ifndef IAcadToolProperties_get_CurrentShapeId_Proxy
+
+#ifndef IAcadToolProperties_get_CurrentShapeId_Stub
+#define IAcadToolProperties_get_CurrentShapeId_Stub		IZcadToolProperties_get_CurrentShapeId_Stub
+#endif //#ifndef IAcadToolProperties_get_CurrentShapeId_Stub
+
+#ifndef IAcadToolProperties_get_Description
+#define IAcadToolProperties_get_Description		IZcadToolProperties_get_Description
+#endif //#ifndef IAcadToolProperties_get_Description
+
+#ifndef IAcadToolProperties_get_Description_Proxy
+#define IAcadToolProperties_get_Description_Proxy		IZcadToolProperties_get_Description_Proxy
+#endif //#ifndef IAcadToolProperties_get_Description_Proxy
+
+#ifndef IAcadToolProperties_get_Description_Stub
+#define IAcadToolProperties_get_Description_Stub		IZcadToolProperties_get_Description_Stub
+#endif //#ifndef IAcadToolProperties_get_Description_Stub
+
+#ifndef IAcadToolProperties_get_HelpCommand
+#define IAcadToolProperties_get_HelpCommand		IZcadToolProperties_get_HelpCommand
+#endif //#ifndef IAcadToolProperties_get_HelpCommand
+
+#ifndef IAcadToolProperties_get_HelpCommand_Proxy
+#define IAcadToolProperties_get_HelpCommand_Proxy		IZcadToolProperties_get_HelpCommand_Proxy
+#endif //#ifndef IAcadToolProperties_get_HelpCommand_Proxy
+
+#ifndef IAcadToolProperties_get_HelpCommand_Stub
+#define IAcadToolProperties_get_HelpCommand_Stub		IZcadToolProperties_get_HelpCommand_Stub
+#endif //#ifndef IAcadToolProperties_get_HelpCommand_Stub
+
+#ifndef IAcadToolProperties_get_HelpData
+#define IAcadToolProperties_get_HelpData		IZcadToolProperties_get_HelpData
+#endif //#ifndef IAcadToolProperties_get_HelpData
+
+#ifndef IAcadToolProperties_get_HelpData_Proxy
+#define IAcadToolProperties_get_HelpData_Proxy		IZcadToolProperties_get_HelpData_Proxy
+#endif //#ifndef IAcadToolProperties_get_HelpData_Proxy
+
+#ifndef IAcadToolProperties_get_HelpData_Stub
+#define IAcadToolProperties_get_HelpData_Stub		IZcadToolProperties_get_HelpData_Stub
+#endif //#ifndef IAcadToolProperties_get_HelpData_Stub
+
+#ifndef IAcadToolProperties_get_HelpFile
+#define IAcadToolProperties_get_HelpFile		IZcadToolProperties_get_HelpFile
+#endif //#ifndef IAcadToolProperties_get_HelpFile
+
+#ifndef IAcadToolProperties_get_HelpFile_Proxy
+#define IAcadToolProperties_get_HelpFile_Proxy		IZcadToolProperties_get_HelpFile_Proxy
+#endif //#ifndef IAcadToolProperties_get_HelpFile_Proxy
+
+#ifndef IAcadToolProperties_get_HelpFile_Stub
+#define IAcadToolProperties_get_HelpFile_Stub		IZcadToolProperties_get_HelpFile_Stub
+#endif //#ifndef IAcadToolProperties_get_HelpFile_Stub
+
+#ifndef IAcadToolProperties_get_ID
+#define IAcadToolProperties_get_ID		IZcadToolProperties_get_ID
+#endif //#ifndef IAcadToolProperties_get_ID
+
+#ifndef IAcadToolProperties_get_ID_Proxy
+#define IAcadToolProperties_get_ID_Proxy		IZcadToolProperties_get_ID_Proxy
+#endif //#ifndef IAcadToolProperties_get_ID_Proxy
+
+#ifndef IAcadToolProperties_get_ID_Stub
+#define IAcadToolProperties_get_ID_Stub		IZcadToolProperties_get_ID_Stub
+#endif //#ifndef IAcadToolProperties_get_ID_Stub
+
+#ifndef IAcadToolProperties_get_IsFlyoutEnabled
+#define IAcadToolProperties_get_IsFlyoutEnabled		IZcadToolProperties_get_IsFlyoutEnabled
+#endif //#ifndef IAcadToolProperties_get_IsFlyoutEnabled
+
+#ifndef IAcadToolProperties_get_IsFlyoutEnabled_Proxy
+#define IAcadToolProperties_get_IsFlyoutEnabled_Proxy		IZcadToolProperties_get_IsFlyoutEnabled_Proxy
+#endif //#ifndef IAcadToolProperties_get_IsFlyoutEnabled_Proxy
+
+#ifndef IAcadToolProperties_get_IsFlyoutEnabled_Stub
+#define IAcadToolProperties_get_IsFlyoutEnabled_Stub		IZcadToolProperties_get_IsFlyoutEnabled_Stub
+#endif //#ifndef IAcadToolProperties_get_IsFlyoutEnabled_Stub
+
+#ifndef IAcadToolProperties_get_IsReadOnly
+#define IAcadToolProperties_get_IsReadOnly		IZcadToolProperties_get_IsReadOnly
+#endif //#ifndef IAcadToolProperties_get_IsReadOnly
+
+#ifndef IAcadToolProperties_get_IsReadOnly_Proxy
+#define IAcadToolProperties_get_IsReadOnly_Proxy		IZcadToolProperties_get_IsReadOnly_Proxy
+#endif //#ifndef IAcadToolProperties_get_IsReadOnly_Proxy
+
+#ifndef IAcadToolProperties_get_IsReadOnly_Stub
+#define IAcadToolProperties_get_IsReadOnly_Stub		IZcadToolProperties_get_IsReadOnly_Stub
+#endif //#ifndef IAcadToolProperties_get_IsReadOnly_Stub
+
+#ifndef IAcadToolProperties_get_Name
+#define IAcadToolProperties_get_Name		IZcadToolProperties_get_Name
+#endif //#ifndef IAcadToolProperties_get_Name
+
+#ifndef IAcadToolProperties_get_Name_Proxy
+#define IAcadToolProperties_get_Name_Proxy		IZcadToolProperties_get_Name_Proxy
+#endif //#ifndef IAcadToolProperties_get_Name_Proxy
+
+#ifndef IAcadToolProperties_get_Name_Stub
+#define IAcadToolProperties_get_Name_Stub		IZcadToolProperties_get_Name_Stub
+#endif //#ifndef IAcadToolProperties_get_Name_Stub
+
+#ifndef IAcadToolProperties_get_ShapePackageId
+#define IAcadToolProperties_get_ShapePackageId		IZcadToolProperties_get_ShapePackageId
+#endif //#ifndef IAcadToolProperties_get_ShapePackageId
+
+#ifndef IAcadToolProperties_get_ShapePackageId_Proxy
+#define IAcadToolProperties_get_ShapePackageId_Proxy		IZcadToolProperties_get_ShapePackageId_Proxy
+#endif //#ifndef IAcadToolProperties_get_ShapePackageId_Proxy
+
+#ifndef IAcadToolProperties_get_ShapePackageId_Stub
+#define IAcadToolProperties_get_ShapePackageId_Stub		IZcadToolProperties_get_ShapePackageId_Stub
+#endif //#ifndef IAcadToolProperties_get_ShapePackageId_Stub
+
+#ifndef IAcadToolProperties_get_ToolTipText
+#define IAcadToolProperties_get_ToolTipText		IZcadToolProperties_get_ToolTipText
+#endif //#ifndef IAcadToolProperties_get_ToolTipText
+
+#ifndef IAcadToolProperties_get_ToolTipText_Proxy
+#define IAcadToolProperties_get_ToolTipText_Proxy		IZcadToolProperties_get_ToolTipText_Proxy
+#endif //#ifndef IAcadToolProperties_get_ToolTipText_Proxy
+
+#ifndef IAcadToolProperties_get_ToolTipText_Stub
+#define IAcadToolProperties_get_ToolTipText_Stub		IZcadToolProperties_get_ToolTipText_Stub
+#endif //#ifndef IAcadToolProperties_get_ToolTipText_Stub
+
+#ifndef IAcadToolProperties_get_ToolType
+#define IAcadToolProperties_get_ToolType		IZcadToolProperties_get_ToolType
+#endif //#ifndef IAcadToolProperties_get_ToolType
+
+#ifndef IAcadToolProperties_get_ToolType_Proxy
+#define IAcadToolProperties_get_ToolType_Proxy		IZcadToolProperties_get_ToolType_Proxy
+#endif //#ifndef IAcadToolProperties_get_ToolType_Proxy
+
+#ifndef IAcadToolProperties_get_ToolType_Stub
+#define IAcadToolProperties_get_ToolType_Stub		IZcadToolProperties_get_ToolType_Stub
+#endif //#ifndef IAcadToolProperties_get_ToolType_Stub
+
+#ifndef IAcadToolProperties_put_ActiveShapeIds
+#define IAcadToolProperties_put_ActiveShapeIds		IZcadToolProperties_put_ActiveShapeIds
+#endif //#ifndef IAcadToolProperties_put_ActiveShapeIds
+
+#ifndef IAcadToolProperties_put_ActiveShapeIds_Proxy
+#define IAcadToolProperties_put_ActiveShapeIds_Proxy		IZcadToolProperties_put_ActiveShapeIds_Proxy
+#endif //#ifndef IAcadToolProperties_put_ActiveShapeIds_Proxy
+
+#ifndef IAcadToolProperties_put_ActiveShapeIds_Stub
+#define IAcadToolProperties_put_ActiveShapeIds_Stub		IZcadToolProperties_put_ActiveShapeIds_Stub
+#endif //#ifndef IAcadToolProperties_put_ActiveShapeIds_Stub
+
+#ifndef IAcadToolProperties_put_CurrentShapeId
+#define IAcadToolProperties_put_CurrentShapeId		IZcadToolProperties_put_CurrentShapeId
+#endif //#ifndef IAcadToolProperties_put_CurrentShapeId
+
+#ifndef IAcadToolProperties_put_CurrentShapeId_Proxy
+#define IAcadToolProperties_put_CurrentShapeId_Proxy		IZcadToolProperties_put_CurrentShapeId_Proxy
+#endif //#ifndef IAcadToolProperties_put_CurrentShapeId_Proxy
+
+#ifndef IAcadToolProperties_put_CurrentShapeId_Stub
+#define IAcadToolProperties_put_CurrentShapeId_Stub		IZcadToolProperties_put_CurrentShapeId_Stub
+#endif //#ifndef IAcadToolProperties_put_CurrentShapeId_Stub
+
+#ifndef IAcadToolProperties_put_Description
+#define IAcadToolProperties_put_Description		IZcadToolProperties_put_Description
+#endif //#ifndef IAcadToolProperties_put_Description
+
+#ifndef IAcadToolProperties_put_Description_Proxy
+#define IAcadToolProperties_put_Description_Proxy		IZcadToolProperties_put_Description_Proxy
+#endif //#ifndef IAcadToolProperties_put_Description_Proxy
+
+#ifndef IAcadToolProperties_put_Description_Stub
+#define IAcadToolProperties_put_Description_Stub		IZcadToolProperties_put_Description_Stub
+#endif //#ifndef IAcadToolProperties_put_Description_Stub
+
+#ifndef IAcadToolProperties_put_HelpCommand
+#define IAcadToolProperties_put_HelpCommand		IZcadToolProperties_put_HelpCommand
+#endif //#ifndef IAcadToolProperties_put_HelpCommand
+
+#ifndef IAcadToolProperties_put_HelpCommand_Proxy
+#define IAcadToolProperties_put_HelpCommand_Proxy		IZcadToolProperties_put_HelpCommand_Proxy
+#endif //#ifndef IAcadToolProperties_put_HelpCommand_Proxy
+
+#ifndef IAcadToolProperties_put_HelpCommand_Stub
+#define IAcadToolProperties_put_HelpCommand_Stub		IZcadToolProperties_put_HelpCommand_Stub
+#endif //#ifndef IAcadToolProperties_put_HelpCommand_Stub
+
+#ifndef IAcadToolProperties_put_HelpData
+#define IAcadToolProperties_put_HelpData		IZcadToolProperties_put_HelpData
+#endif //#ifndef IAcadToolProperties_put_HelpData
+
+#ifndef IAcadToolProperties_put_HelpData_Proxy
+#define IAcadToolProperties_put_HelpData_Proxy		IZcadToolProperties_put_HelpData_Proxy
+#endif //#ifndef IAcadToolProperties_put_HelpData_Proxy
+
+#ifndef IAcadToolProperties_put_HelpData_Stub
+#define IAcadToolProperties_put_HelpData_Stub		IZcadToolProperties_put_HelpData_Stub
+#endif //#ifndef IAcadToolProperties_put_HelpData_Stub
+
+#ifndef IAcadToolProperties_put_HelpFile
+#define IAcadToolProperties_put_HelpFile		IZcadToolProperties_put_HelpFile
+#endif //#ifndef IAcadToolProperties_put_HelpFile
+
+#ifndef IAcadToolProperties_put_HelpFile_Proxy
+#define IAcadToolProperties_put_HelpFile_Proxy		IZcadToolProperties_put_HelpFile_Proxy
+#endif //#ifndef IAcadToolProperties_put_HelpFile_Proxy
+
+#ifndef IAcadToolProperties_put_HelpFile_Stub
+#define IAcadToolProperties_put_HelpFile_Stub		IZcadToolProperties_put_HelpFile_Stub
+#endif //#ifndef IAcadToolProperties_put_HelpFile_Stub
+
+#ifndef IAcadToolProperties_put_IsFlyoutEnabled
+#define IAcadToolProperties_put_IsFlyoutEnabled		IZcadToolProperties_put_IsFlyoutEnabled
+#endif //#ifndef IAcadToolProperties_put_IsFlyoutEnabled
+
+#ifndef IAcadToolProperties_put_IsFlyoutEnabled_Proxy
+#define IAcadToolProperties_put_IsFlyoutEnabled_Proxy		IZcadToolProperties_put_IsFlyoutEnabled_Proxy
+#endif //#ifndef IAcadToolProperties_put_IsFlyoutEnabled_Proxy
+
+#ifndef IAcadToolProperties_put_IsFlyoutEnabled_Stub
+#define IAcadToolProperties_put_IsFlyoutEnabled_Stub		IZcadToolProperties_put_IsFlyoutEnabled_Stub
+#endif //#ifndef IAcadToolProperties_put_IsFlyoutEnabled_Stub
+
+#ifndef IAcadToolProperties_put_Name
+#define IAcadToolProperties_put_Name		IZcadToolProperties_put_Name
+#endif //#ifndef IAcadToolProperties_put_Name
+
+#ifndef IAcadToolProperties_put_Name_Proxy
+#define IAcadToolProperties_put_Name_Proxy		IZcadToolProperties_put_Name_Proxy
+#endif //#ifndef IAcadToolProperties_put_Name_Proxy
+
+#ifndef IAcadToolProperties_put_Name_Stub
+#define IAcadToolProperties_put_Name_Stub		IZcadToolProperties_put_Name_Stub
+#endif //#ifndef IAcadToolProperties_put_Name_Stub
+
+#ifndef IAcadToolProperties_put_ShapePackageId
+#define IAcadToolProperties_put_ShapePackageId		IZcadToolProperties_put_ShapePackageId
+#endif //#ifndef IAcadToolProperties_put_ShapePackageId
+
+#ifndef IAcadToolProperties_put_ShapePackageId_Proxy
+#define IAcadToolProperties_put_ShapePackageId_Proxy		IZcadToolProperties_put_ShapePackageId_Proxy
+#endif //#ifndef IAcadToolProperties_put_ShapePackageId_Proxy
+
+#ifndef IAcadToolProperties_put_ShapePackageId_Stub
+#define IAcadToolProperties_put_ShapePackageId_Stub		IZcadToolProperties_put_ShapePackageId_Stub
+#endif //#ifndef IAcadToolProperties_put_ShapePackageId_Stub
+
+#ifndef IAcadToolProperties_put_ToolTipText
+#define IAcadToolProperties_put_ToolTipText		IZcadToolProperties_put_ToolTipText
+#endif //#ifndef IAcadToolProperties_put_ToolTipText
+
+#ifndef IAcadToolProperties_put_ToolTipText_Proxy
+#define IAcadToolProperties_put_ToolTipText_Proxy		IZcadToolProperties_put_ToolTipText_Proxy
+#endif //#ifndef IAcadToolProperties_put_ToolTipText_Proxy
+
+#ifndef IAcadToolProperties_put_ToolTipText_Stub
+#define IAcadToolProperties_put_ToolTipText_Stub		IZcadToolProperties_put_ToolTipText_Stub
+#endif //#ifndef IAcadToolProperties_put_ToolTipText_Stub
+
+#ifndef IAcadToolProperties_put_ToolType
+#define IAcadToolProperties_put_ToolType		IZcadToolProperties_put_ToolType
+#endif //#ifndef IAcadToolProperties_put_ToolType
+
+#ifndef IAcadToolProperties_put_ToolType_Proxy
+#define IAcadToolProperties_put_ToolType_Proxy		IZcadToolProperties_put_ToolType_Proxy
+#endif //#ifndef IAcadToolProperties_put_ToolType_Proxy
+
+#ifndef IAcadToolProperties_put_ToolType_Stub
+#define IAcadToolProperties_put_ToolType_Stub		IZcadToolProperties_put_ToolType_Stub
+#endif //#ifndef IAcadToolProperties_put_ToolType_Stub
+
+#ifndef IAcadToolSort
+#define IAcadToolSort		IZcadToolSort
+#endif //#ifndef IAcadToolSort
+
+#ifndef IAcadToolSortVtbl
+#define IAcadToolSortVtbl		IZcadToolSortVtbl
+#endif //#ifndef IAcadToolSortVtbl
+
+#ifndef IAcadToolSort_AddRef
+#define IAcadToolSort_AddRef		IZcadToolSort_AddRef
+#endif //#ifndef IAcadToolSort_AddRef
+
+#ifndef IAcadToolSort_Compare
+#define IAcadToolSort_Compare		IZcadToolSort_Compare
+#endif //#ifndef IAcadToolSort_Compare
+
+#ifndef IAcadToolSort_Compare_Proxy
+#define IAcadToolSort_Compare_Proxy		IZcadToolSort_Compare_Proxy
+#endif //#ifndef IAcadToolSort_Compare_Proxy
+
+#ifndef IAcadToolSort_Compare_Stub
+#define IAcadToolSort_Compare_Stub		IZcadToolSort_Compare_Stub
+#endif //#ifndef IAcadToolSort_Compare_Stub
+
+#ifndef IAcadToolSort_QueryInterface
+#define IAcadToolSort_QueryInterface		IZcadToolSort_QueryInterface
+#endif //#ifndef IAcadToolSort_QueryInterface
+
+#ifndef IAcadToolSort_Release
+#define IAcadToolSort_Release		IZcadToolSort_Release
+#endif //#ifndef IAcadToolSort_Release
+
+#ifndef IAcadToolVtbl
+#define IAcadToolVtbl		IZcadToolVtbl
+#endif //#ifndef IAcadToolVtbl
+
+#ifndef IAcadTool_AddRef
+#define IAcadTool_AddRef		IZcadTool_AddRef
+#endif //#ifndef IAcadTool_AddRef
+
+#ifndef IAcadTool_BeginEdit
+#define IAcadTool_BeginEdit		IZcadTool_BeginEdit
+#endif //#ifndef IAcadTool_BeginEdit
+
+#ifndef IAcadTool_BeginEdit_Proxy
+#define IAcadTool_BeginEdit_Proxy		IZcadTool_BeginEdit_Proxy
+#endif //#ifndef IAcadTool_BeginEdit_Proxy
+
+#ifndef IAcadTool_BeginEdit_Stub
+#define IAcadTool_BeginEdit_Stub		IZcadTool_BeginEdit_Stub
+#endif //#ifndef IAcadTool_BeginEdit_Stub
+
+#ifndef IAcadTool_BeginMultipleEdit
+#define IAcadTool_BeginMultipleEdit		IZcadTool_BeginMultipleEdit
+#endif //#ifndef IAcadTool_BeginMultipleEdit
+
+#ifndef IAcadTool_BeginMultipleEdit_Proxy
+#define IAcadTool_BeginMultipleEdit_Proxy		IZcadTool_BeginMultipleEdit_Proxy
+#endif //#ifndef IAcadTool_BeginMultipleEdit_Proxy
+
+#ifndef IAcadTool_BeginMultipleEdit_Stub
+#define IAcadTool_BeginMultipleEdit_Stub		IZcadTool_BeginMultipleEdit_Stub
+#endif //#ifndef IAcadTool_BeginMultipleEdit_Stub
+
+#ifndef IAcadTool_Dropped
+#define IAcadTool_Dropped		IZcadTool_Dropped
+#endif //#ifndef IAcadTool_Dropped
+
+#ifndef IAcadTool_Dropped_Proxy
+#define IAcadTool_Dropped_Proxy		IZcadTool_Dropped_Proxy
+#endif //#ifndef IAcadTool_Dropped_Proxy
+
+#ifndef IAcadTool_Dropped_Stub
+#define IAcadTool_Dropped_Stub		IZcadTool_Dropped_Stub
+#endif //#ifndef IAcadTool_Dropped_Stub
+
+#ifndef IAcadTool_Edit
+#define IAcadTool_Edit		IZcadTool_Edit
+#endif //#ifndef IAcadTool_Edit
+
+#ifndef IAcadTool_Edit_Proxy
+#define IAcadTool_Edit_Proxy		IZcadTool_Edit_Proxy
+#endif //#ifndef IAcadTool_Edit_Proxy
+
+#ifndef IAcadTool_Edit_Stub
+#define IAcadTool_Edit_Stub		IZcadTool_Edit_Stub
+#endif //#ifndef IAcadTool_Edit_Stub
+
+#ifndef IAcadTool_EndEdit
+#define IAcadTool_EndEdit		IZcadTool_EndEdit
+#endif //#ifndef IAcadTool_EndEdit
+
+#ifndef IAcadTool_EndEdit_Proxy
+#define IAcadTool_EndEdit_Proxy		IZcadTool_EndEdit_Proxy
+#endif //#ifndef IAcadTool_EndEdit_Proxy
+
+#ifndef IAcadTool_EndEdit_Stub
+#define IAcadTool_EndEdit_Stub		IZcadTool_EndEdit_Stub
+#endif //#ifndef IAcadTool_EndEdit_Stub
+
+#ifndef IAcadTool_EndMultipleEdit
+#define IAcadTool_EndMultipleEdit		IZcadTool_EndMultipleEdit
+#endif //#ifndef IAcadTool_EndMultipleEdit
+
+#ifndef IAcadTool_EndMultipleEdit_Proxy
+#define IAcadTool_EndMultipleEdit_Proxy		IZcadTool_EndMultipleEdit_Proxy
+#endif //#ifndef IAcadTool_EndMultipleEdit_Proxy
+
+#ifndef IAcadTool_EndMultipleEdit_Stub
+#define IAcadTool_EndMultipleEdit_Stub		IZcadTool_EndMultipleEdit_Stub
+#endif //#ifndef IAcadTool_EndMultipleEdit_Stub
+
+#ifndef IAcadTool_Execute
+#define IAcadTool_Execute		IZcadTool_Execute
+#endif //#ifndef IAcadTool_Execute
+
+#ifndef IAcadTool_Execute_Proxy
+#define IAcadTool_Execute_Proxy		IZcadTool_Execute_Proxy
+#endif //#ifndef IAcadTool_Execute_Proxy
+
+#ifndef IAcadTool_Execute_Stub
+#define IAcadTool_Execute_Stub		IZcadTool_Execute_Stub
+#endif //#ifndef IAcadTool_Execute_Stub
+
+#ifndef IAcadTool_GetCommandString
+#define IAcadTool_GetCommandString		IZcadTool_GetCommandString
+#endif //#ifndef IAcadTool_GetCommandString
+
+#ifndef IAcadTool_GetCommandString_Proxy
+#define IAcadTool_GetCommandString_Proxy		IZcadTool_GetCommandString_Proxy
+#endif //#ifndef IAcadTool_GetCommandString_Proxy
+
+#ifndef IAcadTool_GetCommandString_Stub
+#define IAcadTool_GetCommandString_Stub		IZcadTool_GetCommandString_Stub
+#endif //#ifndef IAcadTool_GetCommandString_Stub
+
+#ifndef IAcadTool_GetContextMenu
+#define IAcadTool_GetContextMenu		IZcadTool_GetContextMenu
+#endif //#ifndef IAcadTool_GetContextMenu
+
+#ifndef IAcadTool_GetContextMenu_Proxy
+#define IAcadTool_GetContextMenu_Proxy		IZcadTool_GetContextMenu_Proxy
+#endif //#ifndef IAcadTool_GetContextMenu_Proxy
+
+#ifndef IAcadTool_GetContextMenu_Stub
+#define IAcadTool_GetContextMenu_Stub		IZcadTool_GetContextMenu_Stub
+#endif //#ifndef IAcadTool_GetContextMenu_Stub
+
+#ifndef IAcadTool_GetData
+#define IAcadTool_GetData		IZcadTool_GetData
+#endif //#ifndef IAcadTool_GetData
+
+#ifndef IAcadTool_GetData_Proxy
+#define IAcadTool_GetData_Proxy		IZcadTool_GetData_Proxy
+#endif //#ifndef IAcadTool_GetData_Proxy
+
+#ifndef IAcadTool_GetData_Stub
+#define IAcadTool_GetData_Stub		IZcadTool_GetData_Stub
+#endif //#ifndef IAcadTool_GetData_Stub
+
+#ifndef IAcadTool_GetDragDropContextInfo
+#define IAcadTool_GetDragDropContextInfo		IZcadTool_GetDragDropContextInfo
+#endif //#ifndef IAcadTool_GetDragDropContextInfo
+
+#ifndef IAcadTool_GetDragDropContextInfo_Proxy
+#define IAcadTool_GetDragDropContextInfo_Proxy		IZcadTool_GetDragDropContextInfo_Proxy
+#endif //#ifndef IAcadTool_GetDragDropContextInfo_Proxy
+
+#ifndef IAcadTool_GetDragDropContextInfo_Stub
+#define IAcadTool_GetDragDropContextInfo_Stub		IZcadTool_GetDragDropContextInfo_Stub
+#endif //#ifndef IAcadTool_GetDragDropContextInfo_Stub
+
+#ifndef IAcadTool_GetDropTarget
+#define IAcadTool_GetDropTarget		IZcadTool_GetDropTarget
+#endif //#ifndef IAcadTool_GetDropTarget
+
+#ifndef IAcadTool_GetDropTarget_Proxy
+#define IAcadTool_GetDropTarget_Proxy		IZcadTool_GetDropTarget_Proxy
+#endif //#ifndef IAcadTool_GetDropTarget_Proxy
+
+#ifndef IAcadTool_GetDropTarget_Stub
+#define IAcadTool_GetDropTarget_Stub		IZcadTool_GetDropTarget_Stub
+#endif //#ifndef IAcadTool_GetDropTarget_Stub
+
+#ifndef IAcadTool_GetStockTool
+#define IAcadTool_GetStockTool		IZcadTool_GetStockTool
+#endif //#ifndef IAcadTool_GetStockTool
+
+#ifndef IAcadTool_GetStockTool_Proxy
+#define IAcadTool_GetStockTool_Proxy		IZcadTool_GetStockTool_Proxy
+#endif //#ifndef IAcadTool_GetStockTool_Proxy
+
+#ifndef IAcadTool_GetStockTool_Stub
+#define IAcadTool_GetStockTool_Stub		IZcadTool_GetStockTool_Stub
+#endif //#ifndef IAcadTool_GetStockTool_Stub
+
+#ifndef IAcadTool_GetToolProperties
+#define IAcadTool_GetToolProperties		IZcadTool_GetToolProperties
+#endif //#ifndef IAcadTool_GetToolProperties
+
+#ifndef IAcadTool_GetToolProperties_Proxy
+#define IAcadTool_GetToolProperties_Proxy		IZcadTool_GetToolProperties_Proxy
+#endif //#ifndef IAcadTool_GetToolProperties_Proxy
+
+#ifndef IAcadTool_GetToolProperties_Stub
+#define IAcadTool_GetToolProperties_Stub		IZcadTool_GetToolProperties_Stub
+#endif //#ifndef IAcadTool_GetToolProperties_Stub
+
+#ifndef IAcadTool_InvokeCommand
+#define IAcadTool_InvokeCommand		IZcadTool_InvokeCommand
+#endif //#ifndef IAcadTool_InvokeCommand
+
+#ifndef IAcadTool_InvokeCommand_Proxy
+#define IAcadTool_InvokeCommand_Proxy		IZcadTool_InvokeCommand_Proxy
+#endif //#ifndef IAcadTool_InvokeCommand_Proxy
+
+#ifndef IAcadTool_InvokeCommand_Stub
+#define IAcadTool_InvokeCommand_Stub		IZcadTool_InvokeCommand_Stub
+#endif //#ifndef IAcadTool_InvokeCommand_Stub
+
+#ifndef IAcadTool_Load
+#define IAcadTool_Load		IZcadTool_Load
+#endif //#ifndef IAcadTool_Load
+
+#ifndef IAcadTool_Load_Proxy
+#define IAcadTool_Load_Proxy		IZcadTool_Load_Proxy
+#endif //#ifndef IAcadTool_Load_Proxy
+
+#ifndef IAcadTool_Load_Stub
+#define IAcadTool_Load_Stub		IZcadTool_Load_Stub
+#endif //#ifndef IAcadTool_Load_Stub
+
+#ifndef IAcadTool_MultipleEdit
+#define IAcadTool_MultipleEdit		IZcadTool_MultipleEdit
+#endif //#ifndef IAcadTool_MultipleEdit
+
+#ifndef IAcadTool_MultipleEdit_Proxy
+#define IAcadTool_MultipleEdit_Proxy		IZcadTool_MultipleEdit_Proxy
+#endif //#ifndef IAcadTool_MultipleEdit_Proxy
+
+#ifndef IAcadTool_MultipleEdit_Stub
+#define IAcadTool_MultipleEdit_Stub		IZcadTool_MultipleEdit_Stub
+#endif //#ifndef IAcadTool_MultipleEdit_Stub
+
+#ifndef IAcadTool_New
+#define IAcadTool_New		IZcadTool_New
+#endif //#ifndef IAcadTool_New
+
+#ifndef IAcadTool_New_Proxy
+#define IAcadTool_New_Proxy		IZcadTool_New_Proxy
+#endif //#ifndef IAcadTool_New_Proxy
+
+#ifndef IAcadTool_New_Stub
+#define IAcadTool_New_Stub		IZcadTool_New_Stub
+#endif //#ifndef IAcadTool_New_Stub
+
+#ifndef IAcadTool_QueryInterface
+#define IAcadTool_QueryInterface		IZcadTool_QueryInterface
+#endif //#ifndef IAcadTool_QueryInterface
+
+#ifndef IAcadTool_Refreshed
+#define IAcadTool_Refreshed		IZcadTool_Refreshed
+#endif //#ifndef IAcadTool_Refreshed
+
+#ifndef IAcadTool_Refreshed_Proxy
+#define IAcadTool_Refreshed_Proxy		IZcadTool_Refreshed_Proxy
+#endif //#ifndef IAcadTool_Refreshed_Proxy
+
+#ifndef IAcadTool_Refreshed_Stub
+#define IAcadTool_Refreshed_Stub		IZcadTool_Refreshed_Stub
+#endif //#ifndef IAcadTool_Refreshed_Stub
+
+#ifndef IAcadTool_Release
+#define IAcadTool_Release		IZcadTool_Release
+#endif //#ifndef IAcadTool_Release
+
+#ifndef IAcadTool_Save
+#define IAcadTool_Save		IZcadTool_Save
+#endif //#ifndef IAcadTool_Save
+
+#ifndef IAcadTool_Save_Proxy
+#define IAcadTool_Save_Proxy		IZcadTool_Save_Proxy
+#endif //#ifndef IAcadTool_Save_Proxy
+
+#ifndef IAcadTool_Save_Stub
+#define IAcadTool_Save_Stub		IZcadTool_Save_Stub
+#endif //#ifndef IAcadTool_Save_Stub
+
+#ifndef IAcadTool_SetEditorWindow
+#define IAcadTool_SetEditorWindow		IZcadTool_SetEditorWindow
+#endif //#ifndef IAcadTool_SetEditorWindow
+
+#ifndef IAcadTool_SetEditorWindow_Proxy
+#define IAcadTool_SetEditorWindow_Proxy		IZcadTool_SetEditorWindow_Proxy
+#endif //#ifndef IAcadTool_SetEditorWindow_Proxy
+
+#ifndef IAcadTool_SetEditorWindow_Stub
+#define IAcadTool_SetEditorWindow_Stub		IZcadTool_SetEditorWindow_Stub
+#endif //#ifndef IAcadTool_SetEditorWindow_Stub
+
+#ifndef IAcadTool_SetToolProperties
+#define IAcadTool_SetToolProperties		IZcadTool_SetToolProperties
+#endif //#ifndef IAcadTool_SetToolProperties
+
+#ifndef IAcadTool_SetToolProperties_Proxy
+#define IAcadTool_SetToolProperties_Proxy		IZcadTool_SetToolProperties_Proxy
+#endif //#ifndef IAcadTool_SetToolProperties_Proxy
+
+#ifndef IAcadTool_SetToolProperties_Stub
+#define IAcadTool_SetToolProperties_Stub		IZcadTool_SetToolProperties_Stub
+#endif //#ifndef IAcadTool_SetToolProperties_Stub
+
+#ifndef IAcadTool_ValidateEditChanges
+#define IAcadTool_ValidateEditChanges		IZcadTool_ValidateEditChanges
+#endif //#ifndef IAcadTool_ValidateEditChanges
+
+#ifndef IAcadTool_ValidateEditChanges_Proxy
+#define IAcadTool_ValidateEditChanges_Proxy		IZcadTool_ValidateEditChanges_Proxy
+#endif //#ifndef IAcadTool_ValidateEditChanges_Proxy
+
+#ifndef IAcadTool_ValidateEditChanges_Stub
+#define IAcadTool_ValidateEditChanges_Stub		IZcadTool_ValidateEditChanges_Stub
+#endif //#ifndef IAcadTool_ValidateEditChanges_Stub
+
+#ifndef IAcadTool_get_EditMode
+#define IAcadTool_get_EditMode		IZcadTool_get_EditMode
+#endif //#ifndef IAcadTool_get_EditMode
+
+#ifndef IAcadTool_get_EditMode_Proxy
+#define IAcadTool_get_EditMode_Proxy		IZcadTool_get_EditMode_Proxy
+#endif //#ifndef IAcadTool_get_EditMode_Proxy
+
+#ifndef IAcadTool_get_EditMode_Stub
+#define IAcadTool_get_EditMode_Stub		IZcadTool_get_EditMode_Stub
+#endif //#ifndef IAcadTool_get_EditMode_Stub
+
+#ifndef IID_IAcadStockTool
+#define IID_IAcadStockTool		IID_IZcadStockTool
+#endif //#ifndef IID_IAcadStockTool
+
+#ifndef IID_IAcadTool
+#define IID_IAcadTool		IID_IZcadTool
+#endif //#ifndef IID_IAcadTool
+
+#ifndef IID_IAcadTool2
+#define IID_IAcadTool2		IID_IZcadTool2
+#endif //#ifndef IID_IAcadTool2
+
+#ifndef IID_IAcadToolContextMenu
+#define IID_IAcadToolContextMenu		IID_IZcadToolContextMenu
+#endif //#ifndef IID_IAcadToolContextMenu
+
+#ifndef IID_IAcadToolCopyPaste
+#define IID_IAcadToolCopyPaste		IID_IZcadToolCopyPaste
+#endif //#ifndef IID_IAcadToolCopyPaste
+
+#ifndef IID_IAcadToolDragSource
+#define IID_IAcadToolDragSource		IID_IZcadToolDragSource
+#endif //#ifndef IID_IAcadToolDragSource
+
+#ifndef IID_IAcadToolDropTarget
+#define IID_IAcadToolDropTarget		IID_IZcadToolDropTarget
+#endif //#ifndef IID_IAcadToolDropTarget
+
+#ifndef IID_IAcadToolFlyoutShape
+#define IID_IAcadToolFlyoutShape		IID_IZcadToolFlyoutShape
+#endif //#ifndef IID_IAcadToolFlyoutShape
+
+#ifndef IID_IAcadToolImage
+#define IID_IAcadToolImage		IID_IZcadToolImage
+#endif //#ifndef IID_IAcadToolImage
+
+#ifndef IID_IAcadToolProperties
+#define IID_IAcadToolProperties		IID_IZcadToolProperties
+#endif //#ifndef IID_IAcadToolProperties
+
+#ifndef IID_IAcadToolProperties2
+#define IID_IAcadToolProperties2		IID_IZcadToolProperties2
+#endif //#ifndef IID_IAcadToolProperties2
+
+#ifndef IID_IAcadToolSort
+#define IID_IAcadToolSort		IID_IZcadToolSort
+#endif //#ifndef IID_IAcadToolSort
+
+#ifndef __AcadToolImage_FWD_DEFINED__
+#define __AcadToolImage_FWD_DEFINED__		__ZcadToolImage_FWD_DEFINED__
+#endif //#ifndef __AcadToolImage_FWD_DEFINED__
+
+#ifndef __AcadToolProperties_FWD_DEFINED__
+#define __AcadToolProperties_FWD_DEFINED__		__ZcadToolProperties_FWD_DEFINED__
+#endif //#ifndef __AcadToolProperties_FWD_DEFINED__
+
+#ifndef __IAcadStockTool_FWD_DEFINED__
+#define __IAcadStockTool_FWD_DEFINED__		__IZcadStockTool_FWD_DEFINED__
+#endif //#ifndef __IAcadStockTool_FWD_DEFINED__
+
+#ifndef __IAcadStockTool_INTERFACE_DEFINED__
+#define __IAcadStockTool_INTERFACE_DEFINED__		__IZcadStockTool_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadStockTool_INTERFACE_DEFINED__
+
+#ifndef __IAcadTool2_FWD_DEFINED__
+#define __IAcadTool2_FWD_DEFINED__		__IZcadTool2_FWD_DEFINED__
+#endif //#ifndef __IAcadTool2_FWD_DEFINED__
+
+#ifndef __IAcadTool2_INTERFACE_DEFINED__
+#define __IAcadTool2_INTERFACE_DEFINED__		__IZcadTool2_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadTool2_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolContextMenu_FWD_DEFINED__
+#define __IAcadToolContextMenu_FWD_DEFINED__		__IZcadToolContextMenu_FWD_DEFINED__
+#endif //#ifndef __IAcadToolContextMenu_FWD_DEFINED__
+
+#ifndef __IAcadToolContextMenu_INTERFACE_DEFINED__
+#define __IAcadToolContextMenu_INTERFACE_DEFINED__		__IZcadToolContextMenu_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolContextMenu_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolCopyPaste_FWD_DEFINED__
+#define __IAcadToolCopyPaste_FWD_DEFINED__		__IZcadToolCopyPaste_FWD_DEFINED__
+#endif //#ifndef __IAcadToolCopyPaste_FWD_DEFINED__
+
+#ifndef __IAcadToolCopyPaste_INTERFACE_DEFINED__
+#define __IAcadToolCopyPaste_INTERFACE_DEFINED__		__IZcadToolCopyPaste_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolCopyPaste_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolDragSource_FWD_DEFINED__
+#define __IAcadToolDragSource_FWD_DEFINED__		__IZcadToolDragSource_FWD_DEFINED__
+#endif //#ifndef __IAcadToolDragSource_FWD_DEFINED__
+
+#ifndef __IAcadToolDragSource_INTERFACE_DEFINED__
+#define __IAcadToolDragSource_INTERFACE_DEFINED__		__IZcadToolDragSource_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolDragSource_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolDropTarget_FWD_DEFINED__
+#define __IAcadToolDropTarget_FWD_DEFINED__		__IZcadToolDropTarget_FWD_DEFINED__
+#endif //#ifndef __IAcadToolDropTarget_FWD_DEFINED__
+
+#ifndef __IAcadToolDropTarget_INTERFACE_DEFINED__
+#define __IAcadToolDropTarget_INTERFACE_DEFINED__		__IZcadToolDropTarget_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolDropTarget_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolFlyoutShape_FWD_DEFINED__
+#define __IAcadToolFlyoutShape_FWD_DEFINED__		__IZcadToolFlyoutShape_FWD_DEFINED__
+#endif //#ifndef __IAcadToolFlyoutShape_FWD_DEFINED__
+
+#ifndef __IAcadToolFlyoutShape_INTERFACE_DEFINED__
+#define __IAcadToolFlyoutShape_INTERFACE_DEFINED__		__IZcadToolFlyoutShape_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolFlyoutShape_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolImage_FWD_DEFINED__
+#define __IAcadToolImage_FWD_DEFINED__		__IZcadToolImage_FWD_DEFINED__
+#endif //#ifndef __IAcadToolImage_FWD_DEFINED__
+
+#ifndef __IAcadToolImage_INTERFACE_DEFINED__
+#define __IAcadToolImage_INTERFACE_DEFINED__		__IZcadToolImage_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolImage_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolProperties2_FWD_DEFINED__
+#define __IAcadToolProperties2_FWD_DEFINED__		__IZcadToolProperties2_FWD_DEFINED__
+#endif //#ifndef __IAcadToolProperties2_FWD_DEFINED__
+
+#ifndef __IAcadToolProperties2_INTERFACE_DEFINED__
+#define __IAcadToolProperties2_INTERFACE_DEFINED__		__IZcadToolProperties2_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolProperties2_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolProperties_FWD_DEFINED__
+#define __IAcadToolProperties_FWD_DEFINED__		__IZcadToolProperties_FWD_DEFINED__
+#endif //#ifndef __IAcadToolProperties_FWD_DEFINED__
+
+#ifndef __IAcadToolProperties_INTERFACE_DEFINED__
+#define __IAcadToolProperties_INTERFACE_DEFINED__		__IZcadToolProperties_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolProperties_INTERFACE_DEFINED__
+
+#ifndef __IAcadToolSort_FWD_DEFINED__
+#define __IAcadToolSort_FWD_DEFINED__		__IZcadToolSort_FWD_DEFINED__
+#endif //#ifndef __IAcadToolSort_FWD_DEFINED__
+
+#ifndef __IAcadToolSort_INTERFACE_DEFINED__
+#define __IAcadToolSort_INTERFACE_DEFINED__		__IZcadToolSort_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadToolSort_INTERFACE_DEFINED__
+
+#ifndef __IAcadTool_FWD_DEFINED__
+#define __IAcadTool_FWD_DEFINED__		__IZcadTool_FWD_DEFINED__
+#endif //#ifndef __IAcadTool_FWD_DEFINED__
+
+#ifndef __IAcadTool_INTERFACE_DEFINED__
+#define __IAcadTool_INTERFACE_DEFINED__		__IZcadTool_INTERFACE_DEFINED__
+#endif //#ifndef __IAcadTool_INTERFACE_DEFINED__
+
+#endif //#ifndef __ACTC_I_H__

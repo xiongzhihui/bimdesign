@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3acf4d12-f8c8-4c49-b530-b29b7a55eba3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\BimDesign.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BimDesign.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DocData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="acrxEntryPoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDirectoryUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DwgDatabaseUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeRectangleUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GetInputUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="LayerUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TextStyleUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TextUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BimDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="excel9.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="rwExcel.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleClickEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DocData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AllHead.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDirectoryUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DwgDatabaseUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GeRectangleUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GetInputUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TextStyleUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TextUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BimDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="excel9.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="rwExcel.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleClickEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BimDesign.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

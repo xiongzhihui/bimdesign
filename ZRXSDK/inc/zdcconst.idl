@@ -1,0 +1,94 @@
+
+
+typedef [uuid(9D26BE08-5FBC-402A-B085-6658C29AC235)] [v1_enum] enum dcNavNodeRelation
+{
+    dcNavNodeFirst = 0,
+    dcNavNodeLast,
+    dcNavNodeSort,
+} dcNavNodeRelation;
+
+typedef [uuid(3CECD4CC-9044-49EE-BF1F-BAFE2CEE0714)] [v1_enum] enum dcPalColAlignment
+{
+    dcPalColLeft    = 0,
+    dcPalColRight   = 1,
+    dcPalColCenter  = 2
+} dcPalColAlignment;
+
+typedef [uuid(9F54BA3E-556D-4629-913B-C6E9BCFE8A0A)] [v1_enum] enum dcPalSortOrder
+{
+    dcPalAscending  = 0,
+    dcPalDescending = 1
+} dcPalSortOrder;
+
+typedef [uuid(7342E279-7035-4862-A949-2EC40AACD053)] [v1_enum] enum dcPalViewType
+{
+    dcPalIcon       = 0,
+    dcPalSmallIcon  = 1,
+    dcPalList       = 2,
+    dcPalReport     = 3
+} dcPalViewType;
+
+typedef [uuid(914F51AF-C8EB-4145-B966-8670C502CA26)] [v1_enum] enum dcFinderTypeMask
+{
+    dcFinderTypeMaskDate            = 1,
+    dcFinderTypeMaskAdvanced        = 2,
+    dcFinderTypeMaskFileBased       = 4,
+    dcFinderTypeMaskDateReturned    = 8,
+    dcFinderTypeMaskSizeReturned    = 16,
+} dcFinderTypeMask;
+
+typedef [uuid(3797B018-0137-477B-BBA7-AEC99A9E028F)] [v1_enum] enum dcFinderObjectTypes
+{
+	dcFinderADeskDrawing        = 0,
+	dcFinderADeskBlock          = 1,
+	dcFinderADeskLayer          = 2,
+	dcFinderADeskActrix         = 3,
+	dcFinderADeskActrixCatalog  = 4,
+	dcFinderADeskXref           = 5,
+	dcFinderADeskLinetypes      = 6,
+	dcFinderThirdParty          = 7,
+	dcFinderADeskLayouts        = 8,
+	dcFinderADeskDimStyles      = 9,
+	dcFinderADeskTextStyles     = 10,
+	dcFinderADeskTableStyles    = 11,
+} dcFinderObjectTypes;
+
+typedef [uuid(D15B7FEF-D8E9-49F4-888D-1C58C793D10D)] [v1_enum] enum dcFinderCommands
+{
+	dcFinderCmdInsert           = 1,
+	dcFinderCmdAttachAsXref     = 2,
+	dcFinderCmdCopy             = 3,
+	dcFinderCmdOpen             = 4,
+	dcFinderCmdLoad             = 5,
+	dcFinderCmdFirst            = 1,
+	dcFinderCmdCustFirst        = 6,
+	dcFinderCmdCustLast         = 32,
+	dcFinderCmdLast             = 32,
+} dcFinderCommands;
+
+typedef [uuid(507F4F9D-7AA7-456B-93DC-D3EE84DD08E3)] [v1_enum] enum dcContentMode
+{
+    dcDesktop		     = 0,
+    dcOpenDrawings	     = 1,
+    dcCustomContent	     = 2,
+} dcContentMode;
+
+typedef [uuid(C2D36D52-86D4-44EB-8D18-850B72607111)] [v1_enum] enum dcPane
+{
+    dcPreview            = 0,
+    dcDescription        = 1,
+    dcNavigator          = 2,
+} dcPane;
+
+typedef [uuid(46A803BA-2F45-4929-82FE-18367C612950)] [v1_enum] enum dcMenuInfoFlag
+{
+    dcHelpText          = 0,
+    dcValidate          = 1,
+    dcVerb              = 2,
+} dcMenuInfoFlag;
+
+typedef [uuid(00A5CE76-7894-410E-8AA2-218529937270)] [v1_enum] enum dcItemDataSource
+{
+    dcIDSNavigator      = 0,
+    dcIDSPalette        = 1,
+} dcItemDataSource;
